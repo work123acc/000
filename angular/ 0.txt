@@ -1,0 +1,25 @@
+не находит части ядра, 
+
+npm install -g @angular/cli
+npm install -g typescript
+npm install bootstrap --save-dev
+
+
+ng -v
+ng version
+
+cd NewProject
+cd d:\
+
+ng g c home-page --module app
+ng g c setup-page --module app
+
+ng new angularProject
+ng new angularProject --style scss
+ng generate component navbar
+ng g c gallery
+
+
+npm run start
+npm run lite
+npm run test
