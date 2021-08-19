@@ -1,0 +1,37 @@
+<div class="container">
+
+	<!----------------------------------- comment -------------------------------------------->
+	<div class="row">
+		<div class="input-field col s6">
+			<input id="first_name" type="text" class="validate">
+			<label class="active" for="first_name">Поиск по имени</label>
+		</div>
+	</div>
+	<!----------------------------------- comment --------------------------------------------
+		<div class="row">
+		<div class="input-field col s6">
+			<input id="first_name" type="text" class="validate" 
+			[(ngModel)]="searchStr"
+			>
+			<label class="active" for="first_name">Поиск по имени</label>
+		</div>
+	</div>
+	<!----------------------------------- comment -------------------------------------------->
+
+	<div class="row">
+		<!----------------------------------- comment --------------------------------------------
+		<app-user 
+		*ngFor="let u of users | search:searchStr" 
+		[user]="u"
+		>
+		</app-user>
+		<!----------------------------------- comment -------------------------------------------->
+		<app-user 
+		*ngFor="let u of users" 
+		[user]="u"
+		>
+		</app-user>
+		<!----------------------------------- comment -------------------------------------------->
+	</div>
+	
+</div>
